@@ -1,0 +1,10 @@
+<!--pages/main-video/main-video.wxml-->
+<!-- 推荐视频 -->
+<view class="video-list">
+  <block wx:for="{{videoList}}" wx:key="id">
+    <video-item bindtap="openItemDetail" data-item="{{item}}" class="item" itemData="{{item}}" />
+  </block>
+  <view wx:if="{{!hasMore}}">
+    已经到底了~
+  </view>
+</view>

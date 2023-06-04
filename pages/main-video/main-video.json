@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "推荐视频",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "video-item": "../../components/video-item/video-item"
+  },
+  "onReachBottomDistance": 10
+}
