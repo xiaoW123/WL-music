@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "@vant/weapp": "^1.10.19",
+    "mobx-miniprogram": "^4.13.2",
+    "mobx-miniprogram-bindings": "^2.1.5",
     "underscore": "^1.13.6"
   }
 }

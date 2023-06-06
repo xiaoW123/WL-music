@@ -11,8 +11,30 @@
   </block>
 </swiper>
 
-<!-- 推荐歌词 -->
-<view>
+<!-- 推荐歌曲 -->
+<view class="recommend">
   <area-header title="推荐歌曲" bind:moreclick="onRecommendMoreClick" />
+  <view class="loading-box" wx:if="{{isLoading}}">
+    <van-loading class="loading" type="spinner" wx:if="{{isLoading}}" />
+  </view>
+  <view class="list" wx:else>
+    <block wx:for="{{sixRecommendSongs}}" wx:key="id">
+      <song-item-v1 itemData="{{item}}" />
+    </block>
+  </view>
+</view>
 
+<!-- 热门歌单 -->
+<menu-area title="热门歌单" menuList="{{hotSongListOne[0].playlists}}" />
+<menu-area title="推荐歌单" menuList="{{hotSongListOne[1].playlists}}" />
+
+
+<!-- 5.巅峰榜 -->
+<view class="ranking" wx:if="peakRankingList" >
+  <area-header title="巅峰榜" hasMore="{{false}}"/>
+  <view class="ranking-list">
+    <block wx:for="{{peakRankingList}}" wx:key="index">
+      <ranking-item itemData="{{item}}" key="{{index}}"/>
+    </block>
+  </view>
 </view>

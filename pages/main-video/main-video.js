@@ -30,8 +30,6 @@ Page({
     })
     this.data.hasMore = data.hasMore
     this.data.offset = this.data.videoList.length
-    console.log(this.data.offset);
-    console.log(newVideoList);
   },
 
   /**
@@ -40,7 +38,6 @@ Page({
 
   openItemDetail(event) {
     const itemId = event.target.dataset.item.id
-    console.log(itemId);
     wx.navigateTo({
       url: `/pages/detail-video/detail-video?id=${itemId}`,
     })

@@ -1,1 +1,17 @@
 /* pages/detail-song/detail-song.wxss */
+.title {
+  margin: 20rpx 30rpx 0;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.song-list {
+  padding: 20rpx;
+  padding-top: 0;
+}
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+}

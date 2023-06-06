@@ -2,7 +2,6 @@ import request from "./request";
 
 // 获取推荐视频列表数据
 export function getTopMV(offset = 0, limit = 20) {
-  console.log(offset + "===========" + limit);
   return request.get("/top/mv", {
     limit,
     offset,
@@ -28,3 +27,4 @@ export function getVideoMvUrl(id) {
  export function getRelatedVideo(id){
 return request.get('/related/allvideo',{ id })
  }
+

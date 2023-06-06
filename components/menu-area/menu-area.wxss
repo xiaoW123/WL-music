@@ -1,0 +1,17 @@
+/* components/menu-area/menu-area.wxss */
+.list {
+  /* display: flex; */
+  margin-left: -24rpx;
+  white-space: nowrap;
+}
+
+.list .item {
+  display: inline-block;
+  /* flex-shrink: 0; */
+  width: 220rpx;
+  margin-left: 24rpx;
+}
+
+.list .item:last-of-type {
+  margin-right: 24rpx;
+}

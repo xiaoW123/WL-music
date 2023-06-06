@@ -38,7 +38,6 @@ Page({
       this.setData({
         videoDatilList: data,
       });
-      console.log('mv数据---',this.data.videoDatilList);
     });
   },
   // 获取mv地址
@@ -47,7 +46,6 @@ Page({
       this.setData({
         mvUrl: data.url,
       });
-      console.log('mvUrl---',this.data.mvUrl);
     });
   },
   fetchRelatVideo() {
@@ -55,8 +53,6 @@ Page({
       this.setData({
         relatedVideo: data
       })
-      console.log('relatVideo---',this.data.relatedVideo);
-
     });
   },
   /**

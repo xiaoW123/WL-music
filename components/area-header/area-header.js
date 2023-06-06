@@ -1,3 +1,4 @@
+
 Component({
   properties: {
     title: {
@@ -9,9 +10,13 @@ Component({
       value: true,
     },
   },
-  methods:{
-    onMoreTap(){
+  data: {
+
+  },
+  methods: {
+    onMoreTap() {
       this.triggerEvent('moreclick')
-    }
+    },
+
   }
 });

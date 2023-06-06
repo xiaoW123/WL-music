@@ -1,2 +1,14 @@
 <!--pages/detail-song/detail-song.wxml-->
-<text>pages/detail-song/detail-song.wxml</text>
+<!-- 推荐歌曲、热门歌单、推荐歌单、巅峰榜 - 更多 -->
+<view class="header" wx:if="{{type === 'menu' && songInfo.name}}">
+  <menu-header songInfo="{{songInfo}}"/>
+</view>
+<view class="title" wx:else="">{{songInfo.name}}</view>
+<view class="song-list" wx:if="{{songInfo}}">
+  <block wx:for="{{songInfo.tracks}}" wx:key="id">
+  <!-- {{item.name}} -->
+    <song-item-v2 itemData="{{item}}" index="{{index+1}}"/>
+  </block>
+</view>
+<van-loading class="loading" type="spinner" wx:if="{{isLoading}}" />
+
