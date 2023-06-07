@@ -10,6 +10,8 @@ export const store = observable({
   songListData:[],
   peakRankingList:[],
   songListItemData:[],
+  musicInfo:[],
+  musicGc:{},
   // 获取歌曲列表
   getRecommendSongs: action(function (step) {
     this.recommendSongs = step
@@ -25,6 +27,16 @@ export const store = observable({
   // 热门歌单、推荐歌单的歌单列表
   getSongListItemData: action(function(step){
     this.songListItemData = step
-  })
+  }),
+  // 获取歌曲信息
+  getMusicInfoAction:action(function(step){
+    console.log(step);
+    this.musicInfo = step
+  }),
+  // 获取歌词
+  getMusicGcAction:action(function(step){ 
+    console.log(step);
+    this.musicGc = step
 
+  })
 })

@@ -6,7 +6,8 @@
     "pages/detail-search/detail-search",
     "components/area-header/area-header",
     "pages/detail-song/detail-song",
-    "pages/detail-menu/detail-menu"
+    "pages/detail-menu/detail-menu",
+    "pages/music-player/music-player"
   ],
   "window": {
     "backgroundTextStyle": "light",

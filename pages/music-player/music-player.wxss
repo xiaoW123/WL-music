@@ -1,0 +1,156 @@
+/* pages/music-player/music-player.wxss */
+/* pages/music-player/music-player.wxss */
+page {
+  color: #fff;
+}
+
+.bg-image, .bg-cover {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-cover {
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(30px);
+}
+
+/* 标题 */
+.tab {
+  display: flex;
+  font-size: 24rpx;
+  color: #aaa;
+}
+
+.tab .divider {
+  margin: 0 8rpx;
+}
+
+.tab .active {
+  color: #fff;
+}
+
+/* 音乐 */
+.music {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 30rpx 60rpx;
+}
+
+.music .album {
+  display: flex;
+  align-items: center;
+  flex: 5;
+}
+
+.music .album .image {
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.music .info {
+  flex: 1;
+}
+
+.music .info .name {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.music .info .singer {
+  font-size: 26rpx;
+  color: #ccc;
+  margin: 16rpx 0;
+}
+
+.music .lyric {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.music .progress {
+  flex: 1;
+}
+
+.music .progress .slider {
+  padding: 0;
+  margin: 0 0 12rpx 18rpx;
+}
+
+.music .progress .time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+
+.music .operation {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20rpx 0 30rpx;
+}
+
+.operation .btn {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 0;
+}
+
+.operation .btn-mode {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.operation .btn-play {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+/* 歌词展示 */
+.lyric-list {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+.lyric-list ::-webkit-scrollbar {
+  display: none;
+}
+
+.lyric-list .item {
+  height: 35px;
+  line-height: 35px;
+  font-size: 14px;
+  text-align: center;
+  color: #989898;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lyric-list .item.active {
+  color: #0f0;
+  font-size: 16px;
+}
+
+/* .lyric-list .item:first-child {
+  padding-top: 100px;
+}
+
+.lyric-list .item:last-child {
+  padding-bottom: 100px;
+} */

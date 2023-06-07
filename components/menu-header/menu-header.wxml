@@ -1,5 +1,4 @@
 <!--components/menu-header/menu-header.wxml-->
-<!--components/menu-header/menu-header.wxml-->
 <wxs src="/utils/format.wxs" module="fmt"></wxs>
 <view class="content">
   <!-- 背景 -->
@@ -30,5 +29,4 @@
     </view>
   </view>
 </view>
-
 

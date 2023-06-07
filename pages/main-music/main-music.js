@@ -155,7 +155,20 @@ Page({
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh() {},
+  onPullDownRefresh() {
+    this.setData({
+      bannerList: [],
+      bannerHeight: 0,
+      sixRecommendSongs: [],
+      hotSongListOne: [],
+      tags: [],
+      peakRankingList: [],
+    })
+    this.fetchSwiperInfo();
+    this.fetchPlaylistDetail();
+    this.fetchHotSongList();
+    this.fetchPeakRanking();
+  },
 
   /**
    * 页面上拉触底事件的处理函数

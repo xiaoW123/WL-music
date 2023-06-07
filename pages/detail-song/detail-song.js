@@ -50,7 +50,9 @@ Page({
       isLoading: false,
     });
   },
-
+  onPlayMusic(){
+    console.log(this.data.songInfo);
+  },
   /**
    * 生命周期函数--监听页面显示
    */

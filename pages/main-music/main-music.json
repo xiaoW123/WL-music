@@ -1,4 +1,6 @@
 {
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
   "usingComponents": {
     "van-search": "@vant/weapp/search/index",
     "area-header":"/components/area-header/area-header",

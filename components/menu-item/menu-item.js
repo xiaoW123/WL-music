@@ -34,6 +34,7 @@ Component({
   methods: {
     onMenuItemTap() {
       const id = this.data.itemData.id;
+      console.log(id);
       getPlaylistDetail(id).then(res=>{
         this.getSongListItemData(res.playlist)
       })
